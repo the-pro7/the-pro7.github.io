@@ -17,13 +17,14 @@ body figure {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 500px;
+  width: auto;
   border-radius: 10pt;
-  /*  img {
-        width: inherit;
-        max-width: 400px;
-        height: inherit;
-    } */
+  overflow: hidden;
+  height: 400px;
+}
+body figure img {
+  width: auto;
+  height: inherit;
 }
 body figure .prod_details {
   padding: 30px;
@@ -85,4 +86,23 @@ body figure .add_to_cart_btn button {
 }
 body figure .add_to_cart_btn button svg {
   font-size: 20px;
+}
+
+.attribution {
+  border: 1px solid #2b8a3e;
+  background-color: rgba(43, 138, 62, 0.2);
+  padding: 15px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  border-radius: 5pt;
+  letter-spacing: 1px;
+}
+.attribution a {
+  text-decoration: none;
+  color: #2b8a3e;
+  font-family: inherit;
+  opacity: 0.7;
+  transition: 0.4s;
+}
+.attribution a:hover {
+  opacity: 1;
 }/*# sourceMappingURL=styles.css.map */
