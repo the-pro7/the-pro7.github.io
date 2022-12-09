@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Kdam+Thmor+Pro&family=Kenia&family=Open+Sans:wght@300;500;700&family=Orbitron:wght@600;700&family=Roboto&display=swap");
+body {
+  background-color: #fff4e6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+body * {
+  margin: 0;
+  font-family: "DM Serif Display", serif;
+}
+body figure {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  border-radius: 10pt;
+  /*  img {
+        width: inherit;
+        max-width: 400px;
+        height: inherit;
+    } */
+}
+body figure .prod_details {
+  padding: 30px;
+  text-align: left;
+}
+body figure .prod_details .prod_type {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #868e96;
+  letter-spacing: 2px;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+body figure .prod_details h1 {
+  margin: 0;
+  line-height: 32px;
+  padding: 20px 0 0 0;
+  color: #343a40;
+}
+body figure .prod_details > p {
+  color: #868e96;
+  font-size: 18px;
+  width: 300px;
+  margin: 20px 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body figure .prices {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 0 20px 0;
+}
+body figure .prices .cancelled {
+  align-self: center;
+  text-decoration: line-through;
+  color: #868e96;
+}
+body figure .prices .main_price {
+  color: #2b8a3e;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+body figure .add_to_cart_btn button {
+  background: #2b8a3e;
+  border: 0;
+  border-radius: 5pt;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+body figure .add_to_cart_btn button svg {
+  font-size: 20px;
+}/*# sourceMappingURL=styles.css.map */

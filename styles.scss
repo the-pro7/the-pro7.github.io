@@ -1,0 +1,119 @@
+// .attribution { 
+//     font-size: 11px; 
+//     text-align: center; 
+// }
+// .attribution a { 
+//     color: hsl(228, 45%, 44%);
+//  }
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Kdam+Thmor+Pro&family=Kenia&family=Open+Sans:wght@300;500;700&family=Orbitron:wght@600;700&family=Roboto&display=swap');
+
+$bg-main: #fff4e6;
+$sec-text-color: #868e96;
+$btn-green: #2b8a3e;
+$default-font: 'DM Serif Display', serif;
+$sorta-dark: #343a40;
+
+body {
+    background-color: $bg-main;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+
+    & * {
+        margin: 0;
+        font-family: $default-font;
+    }
+
+    figure {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        border-radius: 10pt;
+
+      /*  img {
+            width: inherit;
+            max-width: 400px;
+            height: inherit;
+        } */
+
+        .prod_details {
+            padding: 30px;
+            text-align: left;
+
+            .prod_type {
+                font-family: Arial, Helvetica, sans-serif;
+                color: $sec-text-color;
+                letter-spacing: 2px;
+                font-weight: 100;
+                text-transform: uppercase;
+                font-size: 13px;
+            }
+
+            h1 {
+                margin: 0;
+                line-height: 32px;
+                padding: 20px 0 0 0;
+                color: $sorta-dark;
+            }
+        }
+
+        .prod_details > p {
+            color: $sec-text-color;
+            font-size: 18px;
+            width: 300px;
+            margin: 20px 0 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .prices {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0 0 20px 0;
+            
+            
+            .cancelled {
+                align-self: center;
+                text-decoration: line-through;
+                color: $sec-text-color;
+            }
+
+            .main_price {
+                color: $btn-green;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+        }
+
+        .add_to_cart_btn {
+            button {
+                background: $btn-green;
+                border: 0;
+                border-radius: 5pt;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #fff;
+                font-weight: 900;
+                width: 100%;
+                text-align: center;
+                padding: 10px 50px ;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                font-size: 16px;
+                cursor: pointer;
+                opacity: 0.8;
+
+                svg {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
