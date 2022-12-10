@@ -17,18 +17,20 @@ body figure {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: auto;
+  width: 600px !important;
+  transition: 0.4s;
   border-radius: 10pt;
-  overflow: hidden;
-  height: 400px;
+  height: 425px;
 }
 body figure img {
-  width: auto;
+  width: inherit;
   height: inherit;
+  border-radius: 10pt 0 0 10pt;
 }
 body figure .prod_details {
   padding: 30px;
   text-align: left;
+  width: 500px;
 }
 body figure .prod_details .prod_type {
   font-family: Arial, Helvetica, sans-serif;
@@ -38,18 +40,21 @@ body figure .prod_details .prod_type {
   text-transform: uppercase;
   font-size: 13px;
 }
-body figure .prod_details h1 {
+body figure .prod_details h1.header_text {
   margin: 0;
   line-height: 32px;
   padding: 20px 0 0 0;
   color: #343a40;
+  width: 200px;
+  letter-spacing: 2px;
 }
 body figure .prod_details > p {
   color: #868e96;
-  font-size: 18px;
-  width: 300px;
-  margin: 20px 0 0;
+  font-size: 16px;
+  margin: 20px 0;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: inherit;
+  line-height: 25px;
 }
 body figure .prices {
   display: flex;
@@ -61,14 +66,16 @@ body figure .prices .cancelled {
   align-self: center;
   text-decoration: line-through;
   color: #868e96;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
 }
 body figure .prices .main_price {
-  color: #2b8a3e;
+  color: #099268;
   font-weight: bold;
   letter-spacing: 2px;
 }
 body figure .add_to_cart_btn button {
-  background: #2b8a3e;
+  background: #099268;
   border: 0;
   border-radius: 5pt;
   font-family: Arial, Helvetica, sans-serif;
@@ -87,22 +94,46 @@ body figure .add_to_cart_btn button {
 body figure .add_to_cart_btn button svg {
   font-size: 20px;
 }
+@media screen and (max-width: 650px) {
+  body figure {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 400px !important;
+    margin: 50px 0;
+  }
+  body figure img {
+    height: 500px;
+    border-radius: 10pt 10pt 0 0;
+  }
+  body figure .prod_details {
+    width: 300px;
+    padding: 30px 0 !important;
+  }
+  body figure .prod_details h1.header_text {
+    width: 300px;
+  }
+  body footer.attribution {
+    transform: scale(0.8) !important;
+    text-align: center;
+  }
+}
 
-.attribution {
-  border: 1px solid #2b8a3e;
+footer.attribution {
+  border: 1px solid #099268;
   background-color: rgba(43, 138, 62, 0.2);
   padding: 15px;
   font-family: "Kdam Thmor Pro", sans-serif;
   border-radius: 5pt;
   letter-spacing: 1px;
 }
-.attribution a {
+footer.attribution a {
   text-decoration: none;
-  color: #2b8a3e;
+  color: #099268;
   font-family: inherit;
   opacity: 0.7;
   transition: 0.4s;
 }
-.attribution a:hover {
+footer.attribution a:hover {
   opacity: 1;
 }/*# sourceMappingURL=styles.css.map */

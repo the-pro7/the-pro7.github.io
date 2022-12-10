@@ -2,7 +2,7 @@
 
 $bg-main: #fff4e6;
 $sec-text-color: #868e96;
-$btn-green: #2b8a3e;
+$btn-green: #099268;
 $default-font: 'DM Serif Display', serif;
 $sorta-dark: #343a40;
 $font-attribution: 'Kdam Thmor Pro', sans-serif;;
@@ -26,19 +26,22 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: auto;
+        width: 600px !important;
+        transition: .4s;
         border-radius: 10pt;
-        overflow: hidden;
-        height: 400px;
+        // overflow: hidden;
+        height: 425px;
 
        img {
-            width: auto;
+            width: inherit;
             height: inherit;
+            border-radius: 10pt 0 0 10pt;
         }
 
         .prod_details {
             padding: 30px;
             text-align: left;
+            width: 500px;
 
             .prod_type {
                 font-family: Arial, Helvetica, sans-serif;
@@ -49,20 +52,25 @@ body {
                 font-size: 13px;
             }
 
-            h1 {
+            h1.header_text {
                 margin: 0;
                 line-height: 32px;
                 padding: 20px 0 0 0;
                 color: $sorta-dark;
+                width: 200px;
+                letter-spacing: 2px;
             }
         }
 
         .prod_details > p {
             color: $sec-text-color;
-            font-size: 18px;
-            width: 300px;
-            margin: 20px 0 0;
+            font-size: 16px;
+            // width: 200px;
+            margin: 20px 0;
             font-family: Arial, Helvetica, sans-serif;
+            // height: 10px;
+            text-align: inherit;
+            line-height: 25px;
         }
 
         .prices {
@@ -76,6 +84,8 @@ body {
                 align-self: center;
                 text-decoration: line-through;
                 color: $sec-text-color;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
             }
 
             .main_price {
@@ -110,10 +120,41 @@ body {
             }
         }
     }
+
+    @media screen and (max-width: 650px) {
+        figure {
+            display: flex; 
+            flex-direction: column;
+            height: auto;
+            width: 400px !important;
+            margin: 50px 0;
+           
+            img {
+                // padding: 0 !important;
+                height: 500px;
+                border-radius: 10pt 10pt 0 0;
+            }
+
+            .prod_details {
+                width: 300px;
+            padding: 30px 0!important;
+                // width: inherit;
+                    h1.header_text {
+                        width: 300px;  
+                }
+            }
+        }
+
+        footer.attribution {
+            transform: scale(0.8) !important;
+            text-align: center;
+        }
+    }
 }
 
 
-.attribution {
+
+footer.attribution {
     border: 1px solid $btn-green;
     background-color: rgb(43 138 62 / .2);
     padding: 15px;
@@ -133,4 +174,5 @@ body {
         }
     }
 }
+
 
